@@ -1,0 +1,47 @@
+{
+  "name": "xoocode-structured-data-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for validating JSON-LD structured data via the XooCode API",
+  "type": "module",
+  "bin": {
+    "xoocode-structured-data-mcp": "./dist/bin.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "typescript": "^5"
+  },
+  "keywords": [
+    "mcp",
+    "structured-data",
+    "json-ld",
+    "schema-org",
+    "validation",
+    "seo",
+    "rich-results",
+    "ai-agent",
+    "claude",
+    "cursor"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xoocode/structured-data-mcp"
+  },
+  "homepage": "https://xoocode.com/structured-data-testing-tool/mcp-server",
+  "engines": {
+    "node": ">=20"
+  }
+}
